@@ -1,0 +1,9 @@
+expression CsvFilePath =
+		let
+		    Source = "C:\Projects\Py\git\consumer-adoption-powerbi\data\Proccessed_data_CSV.csv" meta [IsParameterQuery = true, IsParameterQueryRequired = false, Type = type text]
+		in
+		    Source
+	lineageTag: e9a7a867-001e-4fa6-bcc9-0a2115a2c332
+
+	annotation PBI_ResultType = Text
+

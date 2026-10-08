@@ -300,7 +300,10 @@ table Proccessed_data_CSV
 		mode: import
 		source =
 				let
-				  Source = Csv.Document(File.Contents("C:\Projects\Py\git\consumer-adoption-powerbi\data\Proccessed_data_CSV.csv"), [Delimiter = ",", Columns = 33, QuoteStyle = QuoteStyle.None]),
+				  Source = Csv.Document(
+				    File.Contents(CsvFilePath),
+				    [Delimiter = ",", Columns = 33, QuoteStyle = QuoteStyle.None]
+				),
 				  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
 				  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"id", Int64.Type}, {"startlanguage", type text}, {"AGE", Int64.Type}, {"SEX", type text}, {"PROF", Int64.Type}, {"INC", Int64.Type}, {"EDU", Int64.Type}, {"DIFF", Int64.Type}, {"ITEM1", Int64.Type}, {"ITEM2", Int64.Type}, {"ITEM3", Int64.Type}, {"ITEM4", Int64.Type}, {"ITEM5", Int64.Type}, {"ITEM6", Int64.Type}, {"ITEM7", Int64.Type}, {"ITEM8", Int64.Type}, {"ITEM9", Int64.Type}, {"ITEM10", Int64.Type}, {"AREA", type text}, {"KNOW", Int64.Type}, {"EXPE", Int64.Type}, {"TRUST", Int64.Type}, {"FIN", type number}, {"CLEAN", Int64.Type}, {"REPAIR", Int64.Type}, {"SPACE", Int64.Type}, {"QUAL", Int64.Type}, {"AVAIL", Int64.Type}, {"MODIF", Int64.Type}, {"W_R", Int64.Type}, {"LT", Int64.Type}, {"SUB", Int64.Type}, {"VD1", Int64.Type}})
 				in
