@@ -11,5 +11,9 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DevMode"]
 
+annotation PBI_QueryOrder = ["Proccessed_data_CSV"]
+
+ref table Proccessed_data_CSV
+
 ref cultureInfo en-US
 

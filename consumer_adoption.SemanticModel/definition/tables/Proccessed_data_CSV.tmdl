@@ -1,0 +1,310 @@
+table Proccessed_data_CSV
+	lineageTag: 0b900f5b-1639-4601-9549-6b79f42e3df7
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: 1cd141e7-3f4d-4504-97ba-73b2b875cdff
+		summarizeBy: sum
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column startlanguage
+		dataType: string
+		lineageTag: e661d263-eb30-4959-ba8f-86bf5de81cea
+		summarizeBy: none
+		sourceColumn: startlanguage
+
+		annotation SummarizationSetBy = Automatic
+
+	column AGE
+		dataType: int64
+		formatString: 0
+		lineageTag: 402cd69f-5d94-4250-ab81-bde211d41a9b
+		summarizeBy: sum
+		sourceColumn: AGE
+
+		annotation SummarizationSetBy = Automatic
+
+	column SEX
+		dataType: string
+		lineageTag: 789dc5c7-019b-481f-9797-81af5797f7d7
+		summarizeBy: none
+		sourceColumn: SEX
+
+		annotation SummarizationSetBy = Automatic
+
+	column PROF
+		dataType: int64
+		formatString: 0
+		lineageTag: e2b9f8bf-9b33-4744-973b-62e0ae6bc616
+		summarizeBy: sum
+		sourceColumn: PROF
+
+		annotation SummarizationSetBy = Automatic
+
+	column INC
+		dataType: int64
+		formatString: 0
+		lineageTag: f3c5e748-2990-440c-bbfd-797e17392da2
+		summarizeBy: sum
+		sourceColumn: INC
+
+		annotation SummarizationSetBy = Automatic
+
+	column EDU
+		dataType: int64
+		formatString: 0
+		lineageTag: 5a1af307-758c-4d11-82c3-07d6d4c664fe
+		summarizeBy: sum
+		sourceColumn: EDU
+
+		annotation SummarizationSetBy = Automatic
+
+	column DIFF
+		dataType: int64
+		formatString: 0
+		lineageTag: a37dd9e2-bef9-43ed-8a4c-a09ef6a5de6e
+		summarizeBy: sum
+		sourceColumn: DIFF
+
+		annotation SummarizationSetBy = Automatic
+
+	column ITEM1
+		dataType: int64
+		formatString: 0
+		lineageTag: 8fd73c18-9381-411d-970e-b032645d5e54
+		summarizeBy: sum
+		sourceColumn: ITEM1
+
+		annotation SummarizationSetBy = Automatic
+
+	column ITEM2
+		dataType: int64
+		formatString: 0
+		lineageTag: 5498baa3-08d0-4152-baa8-1def71afd55b
+		summarizeBy: sum
+		sourceColumn: ITEM2
+
+		annotation SummarizationSetBy = Automatic
+
+	column ITEM3
+		dataType: int64
+		formatString: 0
+		lineageTag: c6f1df5c-bc83-44ea-93ce-c37937fe9b54
+		summarizeBy: sum
+		sourceColumn: ITEM3
+
+		annotation SummarizationSetBy = Automatic
+
+	column ITEM4
+		dataType: int64
+		formatString: 0
+		lineageTag: ebeae0d7-cb39-47ee-b670-526773ce9270
+		summarizeBy: sum
+		sourceColumn: ITEM4
+
+		annotation SummarizationSetBy = Automatic
+
+	column ITEM5
+		dataType: int64
+		formatString: 0
+		lineageTag: f1d37f77-b2bd-4c6f-9ec1-6fcbf38ec12a
+		summarizeBy: sum
+		sourceColumn: ITEM5
+
+		annotation SummarizationSetBy = Automatic
+
+	column ITEM6
+		dataType: int64
+		formatString: 0
+		lineageTag: 823cc63f-60f2-48a2-8744-e9ed1dea7463
+		summarizeBy: sum
+		sourceColumn: ITEM6
+
+		annotation SummarizationSetBy = Automatic
+
+	column ITEM7
+		dataType: int64
+		formatString: 0
+		lineageTag: 7cd4f70f-a00f-4084-b0b7-ce47c727fd33
+		summarizeBy: sum
+		sourceColumn: ITEM7
+
+		annotation SummarizationSetBy = Automatic
+
+	column ITEM8
+		dataType: int64
+		formatString: 0
+		lineageTag: eb41f727-0ced-4231-bff8-4b8490703b69
+		summarizeBy: sum
+		sourceColumn: ITEM8
+
+		annotation SummarizationSetBy = Automatic
+
+	column ITEM9
+		dataType: int64
+		formatString: 0
+		lineageTag: 1e94296e-9f76-422d-9f07-8d89f5e4fe58
+		summarizeBy: sum
+		sourceColumn: ITEM9
+
+		annotation SummarizationSetBy = Automatic
+
+	column ITEM10
+		dataType: int64
+		formatString: 0
+		lineageTag: a1cb9652-1bd9-41c7-ad4a-aae332e6ec83
+		summarizeBy: sum
+		sourceColumn: ITEM10
+
+		annotation SummarizationSetBy = Automatic
+
+	column AREA
+		dataType: string
+		lineageTag: d8ec51ea-43f9-4d03-9bc1-451ed1d63b32
+		summarizeBy: none
+		sourceColumn: AREA
+
+		annotation SummarizationSetBy = Automatic
+
+	column KNOW
+		dataType: int64
+		formatString: 0
+		lineageTag: 030e3579-91b3-4db6-a68d-779a20884962
+		summarizeBy: sum
+		sourceColumn: KNOW
+
+		annotation SummarizationSetBy = Automatic
+
+	column EXPE
+		dataType: int64
+		formatString: 0
+		lineageTag: af6d4151-2bcd-4c3d-bf31-51513344f8da
+		summarizeBy: sum
+		sourceColumn: EXPE
+
+		annotation SummarizationSetBy = Automatic
+
+	column TRUST
+		dataType: int64
+		formatString: 0
+		lineageTag: ff880658-7a49-438a-9257-b16d38f64ab9
+		summarizeBy: sum
+		sourceColumn: TRUST
+
+		annotation SummarizationSetBy = Automatic
+
+	column FIN
+		dataType: double
+		lineageTag: cb5ee206-c7df-47a3-931d-b5c98122d595
+		summarizeBy: sum
+		sourceColumn: FIN
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CLEAN
+		dataType: int64
+		formatString: 0
+		lineageTag: 398ccb53-e4b2-43c7-a185-de2e0cbb7f0d
+		summarizeBy: sum
+		sourceColumn: CLEAN
+
+		annotation SummarizationSetBy = Automatic
+
+	column REPAIR
+		dataType: int64
+		formatString: 0
+		lineageTag: 136df829-bc2b-4373-8f25-881d96bdd398
+		summarizeBy: sum
+		sourceColumn: REPAIR
+
+		annotation SummarizationSetBy = Automatic
+
+	column SPACE
+		dataType: int64
+		formatString: 0
+		lineageTag: 90403742-1b54-4b4b-84a6-53d4fa183569
+		summarizeBy: sum
+		sourceColumn: SPACE
+
+		annotation SummarizationSetBy = Automatic
+
+	column QUAL
+		dataType: int64
+		formatString: 0
+		lineageTag: 17c05127-e960-45bb-b1ff-4285ad4b7878
+		summarizeBy: sum
+		sourceColumn: QUAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column AVAIL
+		dataType: int64
+		formatString: 0
+		lineageTag: 1a8371ce-9732-4eb1-bcdd-7d4ff67ff0e9
+		summarizeBy: sum
+		sourceColumn: AVAIL
+
+		annotation SummarizationSetBy = Automatic
+
+	column MODIF
+		dataType: int64
+		formatString: 0
+		lineageTag: 23df8725-d125-462d-a4b4-b61ce74d3af4
+		summarizeBy: sum
+		sourceColumn: MODIF
+
+		annotation SummarizationSetBy = Automatic
+
+	column W_R
+		dataType: int64
+		formatString: 0
+		lineageTag: fd8acd41-dd4e-4c7f-b992-e3b5dc907f54
+		summarizeBy: sum
+		sourceColumn: W_R
+
+		annotation SummarizationSetBy = Automatic
+
+	column LT
+		dataType: int64
+		formatString: 0
+		lineageTag: d36ee212-9423-4c6f-b59c-951517327dc8
+		summarizeBy: sum
+		sourceColumn: LT
+
+		annotation SummarizationSetBy = Automatic
+
+	column SUB
+		dataType: int64
+		formatString: 0
+		lineageTag: 4b156c39-3022-407e-a7c8-62be4a60bc5d
+		summarizeBy: sum
+		sourceColumn: SUB
+
+		annotation SummarizationSetBy = Automatic
+
+	column VD1
+		dataType: int64
+		formatString: 0
+		lineageTag: 42d5315f-399d-4eea-a81d-c5581f0e0714
+		summarizeBy: sum
+		sourceColumn: VD1
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Proccessed_data_CSV = m
+		mode: import
+		source =
+				let
+				  Source = Csv.Document(File.Contents("C:\Projects\Py\git\consumer-adoption-powerbi\data\Proccessed_data_CSV.csv"), [Delimiter = ",", Columns = 33, QuoteStyle = QuoteStyle.None]),
+				  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"id", Int64.Type}, {"startlanguage", type text}, {"AGE", Int64.Type}, {"SEX", type text}, {"PROF", Int64.Type}, {"INC", Int64.Type}, {"EDU", Int64.Type}, {"DIFF", Int64.Type}, {"ITEM1", Int64.Type}, {"ITEM2", Int64.Type}, {"ITEM3", Int64.Type}, {"ITEM4", Int64.Type}, {"ITEM5", Int64.Type}, {"ITEM6", Int64.Type}, {"ITEM7", Int64.Type}, {"ITEM8", Int64.Type}, {"ITEM9", Int64.Type}, {"ITEM10", Int64.Type}, {"AREA", type text}, {"KNOW", Int64.Type}, {"EXPE", Int64.Type}, {"TRUST", Int64.Type}, {"FIN", type number}, {"CLEAN", Int64.Type}, {"REPAIR", Int64.Type}, {"SPACE", Int64.Type}, {"QUAL", Int64.Type}, {"AVAIL", Int64.Type}, {"MODIF", Int64.Type}, {"W_R", Int64.Type}, {"LT", Int64.Type}, {"SUB", Int64.Type}, {"VD1", Int64.Type}})
+				in
+				  #"Changed column type"
+
+	annotation PBI_ResultType = Table
+
