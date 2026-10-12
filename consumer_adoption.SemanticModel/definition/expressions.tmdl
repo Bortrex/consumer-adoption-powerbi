@@ -7,3 +7,15 @@ expression CsvFilePath =
 
 	annotation PBI_ResultType = Text
 
+expression Audit_Duplicate_IDs =
+		let
+		  Source = Proccessed_data_CSV,
+		  #"Kept duplicates" = let columnNames = {"id"}, addCount = Table.Group(Source, columnNames, {"Count", Table.RowCount, type number}), selectDuplicates = Table.SelectRows(addCount, each [Count] > 1), removeCount = Table.RemoveColumns(selectDuplicates, "Count") in Table.Join(Source, columnNames, removeCount, columnNames, JoinKind.Inner),
+		  #"Sorted rows" = Table.Sort(#"Kept duplicates", {{"id", Order.Ascending}}),
+		  #"Reordered columns" = Table.ReorderColumns(#"Sorted rows", {"id", "startlanguage", "AGE", "SEX", "AREA", "PROF", "INC", "EDU", "DIFF", "ITEM1", "ITEM2", "ITEM3", "ITEM4", "ITEM5", "ITEM6", "ITEM7", "ITEM8", "ITEM9", "ITEM10", "KNOW", "EXPE", "TRUST", "FIN", "CLEAN", "REPAIR", "SPACE", "QUAL", "AVAIL", "MODIF", "W_R", "LT", "SUB", "VD1"})
+		in
+		  #"Reordered columns"
+	lineageTag: 8ee4071f-2fc0-4194-a7b9-45705331c0ee
+
+	annotation PBI_ResultType = Table
+

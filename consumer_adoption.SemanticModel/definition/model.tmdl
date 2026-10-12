@@ -11,7 +11,7 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DevMode"]
 
-annotation PBI_QueryOrder = ["Proccessed_data_CSV","CsvFilePath"]
+annotation PBI_QueryOrder = ["Proccessed_data_CSV","CsvFilePath","Audit_Duplicate_IDs"]
 
 ref table Proccessed_data_CSV
 

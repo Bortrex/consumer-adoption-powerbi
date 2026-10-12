@@ -296,6 +296,15 @@ table Proccessed_data_CSV
 
 		annotation SummarizationSetBy = Automatic
 
+	column ObservationID
+		dataType: int64
+		formatString: 0
+		lineageTag: 712120a8-e87c-4e5b-95c0-bb139ee342aa
+		summarizeBy: count
+		sourceColumn: ObservationID
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Proccessed_data_CSV = m
 		mode: import
 		source =
@@ -305,9 +314,13 @@ table Proccessed_data_CSV
 				    [Delimiter = ",", Columns = 33, QuoteStyle = QuoteStyle.None]
 				),
 				  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
-				  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"id", Int64.Type}, {"startlanguage", type text}, {"AGE", Int64.Type}, {"SEX", type text}, {"PROF", Int64.Type}, {"INC", Int64.Type}, {"EDU", Int64.Type}, {"DIFF", Int64.Type}, {"ITEM1", Int64.Type}, {"ITEM2", Int64.Type}, {"ITEM3", Int64.Type}, {"ITEM4", Int64.Type}, {"ITEM5", Int64.Type}, {"ITEM6", Int64.Type}, {"ITEM7", Int64.Type}, {"ITEM8", Int64.Type}, {"ITEM9", Int64.Type}, {"ITEM10", Int64.Type}, {"AREA", type text}, {"KNOW", Int64.Type}, {"EXPE", Int64.Type}, {"TRUST", Int64.Type}, {"FIN", type number}, {"CLEAN", Int64.Type}, {"REPAIR", Int64.Type}, {"SPACE", Int64.Type}, {"QUAL", Int64.Type}, {"AVAIL", Int64.Type}, {"MODIF", Int64.Type}, {"W_R", Int64.Type}, {"LT", Int64.Type}, {"SUB", Int64.Type}, {"VD1", Int64.Type}})
+				  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"id", Int64.Type}, {"startlanguage", type text}, {"AGE", Int64.Type}, {"SEX", type text}, {"PROF", Int64.Type}, {"INC", Int64.Type}, {"EDU", Int64.Type}, {"DIFF", Int64.Type}, {"ITEM1", Int64.Type}, {"ITEM2", Int64.Type}, {"ITEM3", Int64.Type}, {"ITEM4", Int64.Type}, {"ITEM5", Int64.Type}, {"ITEM6", Int64.Type}, {"ITEM7", Int64.Type}, {"ITEM8", Int64.Type}, {"ITEM9", Int64.Type}, {"ITEM10", Int64.Type}, {"AREA", type text}, {"KNOW", Int64.Type}, {"EXPE", Int64.Type}, {"TRUST", Int64.Type}, {"FIN", type number}, {"CLEAN", Int64.Type}, {"REPAIR", Int64.Type}, {"SPACE", Int64.Type}, {"QUAL", Int64.Type}, {"AVAIL", Int64.Type}, {"MODIF", Int64.Type}, {"W_R", Int64.Type}, {"LT", Int64.Type}, {"SUB", Int64.Type}, {"VD1", Int64.Type}}),
+				  #"Added index" = Table.AddIndexColumn(#"Changed column type", "Index", 1, 1, Int64.Type),
+				  #"Reordered columns" = Table.ReorderColumns(#"Added index", {"id", "startlanguage", "AGE", "SEX", "PROF", "INC", "EDU", "Index", "DIFF", "ITEM1", "ITEM2", "ITEM3", "ITEM4", "ITEM5", "ITEM6", "ITEM7", "ITEM8", "ITEM9", "ITEM10", "AREA", "KNOW", "EXPE", "TRUST", "FIN", "CLEAN", "REPAIR", "SPACE", "QUAL", "AVAIL", "MODIF", "W_R", "LT", "SUB", "VD1"}),
+				  #"Renamed columns" = Table.RenameColumns(#"Reordered columns", {{"Index", "ObservationID"}}),
+				  #"Reordered columns 1" = Table.ReorderColumns(#"Renamed columns", {"ObservationID", "id", "startlanguage", "AGE", "SEX", "PROF", "AREA", "INC", "EDU", "DIFF", "ITEM1", "ITEM2", "ITEM3", "ITEM4", "ITEM5", "ITEM6",  "ITEM7", "ITEM8", "ITEM9", "ITEM10", "KNOW", "EXPE", "TRUST", "FIN", "CLEAN", "REPAIR", "SPACE", "QUAL", "AVAIL", "MODIF", "W_R", "LT", "SUB", "VD1"})
 				in
-				  #"Changed column type"
+				  #"Reordered columns 1"
 
 	annotation PBI_ResultType = Table
 
