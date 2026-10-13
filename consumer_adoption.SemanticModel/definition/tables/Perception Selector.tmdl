@@ -1,0 +1,50 @@
+table 'Perception Selector'
+	lineageTag: 90ba349e-800e-4507-a32b-a64f330746d0
+
+	column 'Perception Selector'
+		lineageTag: 7e416509-8bef-4cc5-9de3-efb9e9c9fc3e
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Perception Selector Order'
+
+		relatedColumnDetails
+			groupByColumn: 'Perception Selector Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Perception Selector Fields'
+		isHidden
+		lineageTag: 7c8d474a-a3fe-4dca-b57d-a636c1c1c1ab
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Perception Selector Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Perception Selector Order'
+		isHidden
+		formatString: 0
+		lineageTag: 2bb6a605-480e-401f-a5ff-eba7fededeaa
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Perception Selector' = calculated
+		mode: import
+		source =
+				{
+				    ("FIN", NAMEOF('Proccessed_data_CSV'[FIN]), 0),
+				    ("TRUST", NAMEOF('Proccessed_data_CSV'[TRUST]), 1),
+				    ("SUB", NAMEOF('Proccessed_data_CSV'[SUB]), 2),
+				    ("AVAIL", NAMEOF('Proccessed_data_CSV'[AVAIL]), 3)
+				}
+
+	annotation PBI_Id = d35499061e2048208fece9177f5ea8d1
+

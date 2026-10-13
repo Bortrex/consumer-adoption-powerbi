@@ -4,5 +4,22 @@
   "displayName": "Page 1",
   "displayOption": "FitToPage",
   "height": 1080,
-  "width": 1920
+  "width": 1920,
+  "pageBinding": {
+    "name": "fc3c92ec0ab19fae2ead",
+    "type": "Default",
+    "parameters": []
+  },
+  "visualInteractions": [
+    {
+      "source": "d59b3c7f0ea28250d577",
+      "target": "7b2c123b5d6f1a1c721e",
+      "type": "DataFilter"
+    },
+    {
+      "source": "7b2c123b5d6f1a1c721e",
+      "target": "d59b3c7f0ea28250d577",
+      "type": "DataFilter"
+    }
+  ]
 }

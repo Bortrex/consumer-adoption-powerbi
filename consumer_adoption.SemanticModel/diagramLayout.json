@@ -4,7 +4,7 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 0,
+        "x": 96.800003051757813,
         "y": 0
       },
       "nodes": [
@@ -17,6 +17,19 @@
           "nodeLineageTag": "0b900f5b-1639-4601-9549-6b79f42e3df7",
           "size": {
             "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 284,
+            "y": 74
+          },
+          "nodeIndex": "Perception Selector",
+          "nodeLineageTag": "90ba349e-800e-4507-a32b-a64f330746d0",
+          "size": {
+            "height": 152,
             "width": 234
           },
           "zIndex": 0
