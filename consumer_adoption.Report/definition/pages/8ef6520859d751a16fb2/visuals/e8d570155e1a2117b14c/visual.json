@@ -4,10 +4,10 @@
   "position": {
     "x": 192.85714285714286,
     "y": 0,
-    "z": 2000,
+    "z": 1000,
     "height": 181.42857142857144,
     "width": 247.14285714285717,
-    "tabOrder": 2000
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "slicer",
@@ -120,7 +120,7 @@
                         },
                         "valueMap": [
                           {
-                            "0": "AVAIL"
+                            "0": "Items unavailability"
                           }
                         ]
                       }

@@ -1,6 +1,25 @@
 table 'Perception Selector'
 	lineageTag: 90ba349e-800e-4507-a32b-a64f330746d0
 
+	measure 'Dynamic Perception Subtitle' =
+			
+			VAR SelectedPerception =
+			    SELECTCOLUMNS(
+			        SUMMARIZE(
+			            'Perception Selector',
+			            'Perception Selector'[Perception Selector],
+			            'Perception Selector'[Perception Selector Fields]
+			        ),
+			        "Label", 'Perception Selector'[Perception Selector]
+			    )
+			RETURN
+			    IF(
+			        COUNTROWS(SelectedPerception) = 1,
+			        "by " & CONCATENATEX(SelectedPerception, [Label]),
+			        "by selected perception"
+			    )
+		lineageTag: 99527494-539e-4b00-a62f-c66512e44df5
+
 	column 'Perception Selector'
 		lineageTag: 7e416509-8bef-4cc5-9de3-efb9e9c9fc3e
 		summarizeBy: none
@@ -40,10 +59,10 @@ table 'Perception Selector'
 		mode: import
 		source =
 				{
-				    ("FIN", NAMEOF('Proccessed_data_CSV'[FIN]), 0),
-				    ("TRUST", NAMEOF('Proccessed_data_CSV'[TRUST]), 1),
-				    ("SUB", NAMEOF('Proccessed_data_CSV'[SUB]), 2),
-				    ("AVAIL", NAMEOF('Proccessed_data_CSV'[AVAIL]), 3)
+				    ("Financial advantage", NAMEOF('Proccessed_data_CSV'[FIN]), 0),
+				    ("Trust", NAMEOF('Proccessed_data_CSV'[TRUST]), 1),
+				    ("Subscription dislike", NAMEOF('Proccessed_data_CSV'[SUB]), 2),
+				    ("Items unavailability", NAMEOF('Proccessed_data_CSV'[AVAIL]), 3)
 				}
 
 	annotation PBI_Id = d35499061e2048208fece9177f5ea8d1
