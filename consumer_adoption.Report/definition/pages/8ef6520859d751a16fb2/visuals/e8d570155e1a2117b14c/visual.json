@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "e8d570155e1a2117b14c",
   "position": {
-    "x": 192.85714285714286,
+    "x": 244.28571428571431,
     "y": 0,
     "z": 1000,
-    "height": 181.42857142857144,
-    "width": 247.14285714285717,
+    "height": 211.42857142857144,
+    "width": 290,
     "tabOrder": 1000
   },
   "visual": {
@@ -68,7 +68,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'''Proccessed_data_CSV''[AVAIL]'"
+                                "Value": "'''Proccessed_data_CSV''[SUB]'"
                               }
                             }
                           ]
@@ -96,7 +96,7 @@
                                 "0": [
                                   {
                                     "Literal": {
-                                      "Value": "'''Proccessed_data_CSV''[AVAIL]'"
+                                      "Value": "'''Proccessed_data_CSV''[SUB]'"
                                     }
                                   }
                                 ]
@@ -120,7 +120,7 @@
                         },
                         "valueMap": [
                           {
-                            "0": "Items unavailability"
+                            "0": "Subscription dislike"
                           }
                         ]
                       }
@@ -139,6 +139,32 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "header": [
+        {
+          "properties": {
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "items": [
+        {
+          "properties": {
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
                 }
               }
             }

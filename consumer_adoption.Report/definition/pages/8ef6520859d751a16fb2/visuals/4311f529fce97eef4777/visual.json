@@ -3,10 +3,10 @@
   "name": "4311f529fce97eef4777",
   "position": {
     "x": 0,
-    "y": 530,
+    "y": 658.57142857142867,
     "z": 3000,
-    "height": 339,
-    "width": 440,
+    "height": 407.14285714285717,
+    "width": 534.28571428571433,
     "tabOrder": 3000
   },
   "visual": {
@@ -77,6 +77,62 @@
           }
         ]
       }
+    },
+    "objects": {
+      "grid": [
+        {
+          "properties": {
+            "imageHeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "81D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "visualTooltip": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
     },
     "drillFilterOtherVisuals": true
   }
