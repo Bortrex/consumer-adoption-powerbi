@@ -2,3 +2,7 @@ relationship 39fa8faf-d047-db26-a31e-cb3c98763a6a
 	fromColumn: Proccessed_data_CSV.AREA
 	toColumn: DimSector.AREA
 
+relationship AutoDetected_15594a02-b6c4-4ce5-abd8-e691add76167
+	fromColumn: Proccessed_data_CSV.EDU
+	toColumn: DimEducation.EDU
+

@@ -11,11 +11,12 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DevMode"]
 
-annotation PBI_QueryOrder = ["Proccessed_data_CSV","CsvFilePath","Audit_Duplicate_IDs","DimSector"]
+annotation PBI_QueryOrder = ["Proccessed_data_CSV","CsvFilePath","Audit_Duplicate_IDs","DimSector","DimEducation"]
 
 ref table Proccessed_data_CSV
 ref table 'Perception Selector'
 ref table DimSector
+ref table DimEducation
 
 ref cultureInfo en-US
 

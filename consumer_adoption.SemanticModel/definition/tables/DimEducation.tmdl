@@ -1,0 +1,43 @@
+table DimEducation
+	lineageTag: d3094c4a-5843-4945-97ec-78734bfbed89
+
+	column EDU
+		dataType: int64
+		formatString: 0
+		lineageTag: cef31ac5-c6f1-4ef0-9dbd-fd7fca233557
+		summarizeBy: none
+		sourceColumn: EDU
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Education Level' =
+			SWITCH(
+			    'DimEducation'[EDU],
+			    1, "Primary school",
+			    2, "Junior high school",
+			    3, "Senior high school",
+			    4, "Bachelor's degree",
+			    5, "Master's degree",
+			    6, "Other professional",
+			    7, "Unknown"
+			)
+		lineageTag: 49b70146-9cbf-41cf-a30b-a2fcf0a63915
+		summarizeBy: none
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimEducation = m
+		mode: import
+		source =
+				let
+				  Source = Proccessed_data_CSV,
+				  #"Removed other columns" = Table.SelectColumns(Source, {"EDU"}),
+				  #"Removed duplicates" = Table.Distinct(#"Removed other columns", {"EDU"}),
+				  #"Sorted rows" = Table.Sort(#"Removed duplicates", {{"EDU", Order.Ascending}})
+				in
+				  #"Sorted rows"
+
+	annotation PBI_ResultType = Table
+
