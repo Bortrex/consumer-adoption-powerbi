@@ -2,8 +2,8 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "3b3c1b160f215046757b",
   "position": {
-    "x": 20,
-    "y": 15.714285714285715,
+    "x": 22.857142857142858,
+    "y": 30.000000000000004,
     "z": 0,
     "height": 181.42857142857144,
     "width": 204.28571428571431,
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Proccessed_data_CSV"
+                      "Entity": "DimSector"
                     }
                   },
                   "Property": "AREA"
                 }
               },
-              "queryRef": "Proccessed_data_CSV.AREA",
-              "nativeQueryRef": "AREA",
+              "queryRef": "DimSector.AREA",
+              "nativeQueryRef": "AREA1",
               "active": true
             }
           ]
@@ -56,8 +56,8 @@
                 "Version": 2,
                 "From": [
                   {
-                    "Name": "p",
-                    "Entity": "Proccessed_data_CSV",
+                    "Name": "d",
+                    "Entity": "DimSector",
                     "Type": 0
                   }
                 ],
@@ -70,7 +70,7 @@
                             "Column": {
                               "Expression": {
                                 "SourceRef": {
-                                  "Source": "p"
+                                  "Source": "d"
                                 }
                               },
                               "Property": "AREA"

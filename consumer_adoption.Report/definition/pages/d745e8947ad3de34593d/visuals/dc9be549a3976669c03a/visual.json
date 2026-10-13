@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Proccessed_data_CSV"
+                      "Entity": "DimSector"
                     }
                   },
                   "Property": "AREA"
                 }
               },
-              "queryRef": "Proccessed_data_CSV.AREA",
+              "queryRef": "DimSector.AREA",
               "nativeQueryRef": "AREA",
               "active": true
             }
@@ -68,24 +68,6 @@
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Measure": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Proccessed_data_CSV"
-                  }
-                },
-                "Property": "Survey Observations"
-              }
-            },
-            "direction": "Descending"
-          }
-        ],
-        "isDefaultSort": true
       }
     },
     "objects": {

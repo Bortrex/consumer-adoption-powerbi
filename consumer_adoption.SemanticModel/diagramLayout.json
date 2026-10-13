@@ -4,7 +4,7 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 97,
+        "x": 0,
         "y": 0
       },
       "nodes": [
@@ -23,13 +23,26 @@
         },
         {
           "location": {
-            "x": 284,
-            "y": 74
+            "x": 304,
+            "y": 230
           },
           "nodeIndex": "Perception Selector",
           "nodeLineageTag": "90ba349e-800e-4507-a32b-a64f330746d0",
           "size": {
             "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 275.40000152587891,
+            "y": 0
+          },
+          "nodeIndex": "DimSector",
+          "nodeLineageTag": "1acf569f-c585-499b-a588-39e0d9dd561f",
+          "size": {
+            "height": 104,
             "width": 234
           },
           "zIndex": 0

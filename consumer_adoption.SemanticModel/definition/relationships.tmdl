@@ -1,0 +1,4 @@
+relationship 39fa8faf-d047-db26-a31e-cb3c98763a6a
+	fromColumn: Proccessed_data_CSV.AREA
+	toColumn: DimSector.AREA
+

@@ -1,0 +1,23 @@
+table DimSector
+	lineageTag: 1acf569f-c585-499b-a588-39e0d9dd561f
+
+	column AREA
+		dataType: string
+		lineageTag: d5da8b31-64f6-4b8c-9e96-a186b7d3f68b
+		summarizeBy: none
+		sourceColumn: AREA
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimSector = m
+		mode: import
+		source =
+				let
+				  Source = Proccessed_data_CSV,
+				  #"Removed other columns" = Table.SelectColumns(Source, {"AREA"}),
+				  #"Removed duplicates" = Table.Distinct(#"Removed other columns", {"AREA"})
+				in
+				  #"Removed duplicates"
+
+	annotation PBI_ResultType = Table
+

@@ -3,7 +3,7 @@
   "name": "e8d570155e1a2117b14c",
   "position": {
     "x": 244.28571428571431,
-    "y": 0,
+    "y": 15.714285714285715,
     "z": 1000,
     "height": 211.42857142857144,
     "width": 290,
@@ -68,7 +68,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'''Proccessed_data_CSV''[SUB]'"
+                                "Value": "'''Proccessed_data_CSV''[AVAIL]'"
                               }
                             }
                           ]
@@ -96,7 +96,7 @@
                                 "0": [
                                   {
                                     "Literal": {
-                                      "Value": "'''Proccessed_data_CSV''[SUB]'"
+                                      "Value": "'''Proccessed_data_CSV''[AVAIL]'"
                                     }
                                   }
                                 ]
@@ -120,7 +120,7 @@
                         },
                         "valueMap": [
                           {
-                            "0": "Subscription dislike"
+                            "0": "Items unavailability"
                           }
                         ]
                       }
