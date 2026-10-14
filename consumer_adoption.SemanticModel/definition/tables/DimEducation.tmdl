@@ -11,20 +11,26 @@ table DimEducation
 		annotation SummarizationSetBy = Automatic
 
 	column 'Education Level' =
-			SWITCH(
-			    'DimEducation'[EDU],
-			    1, "Primary school",
-			    2, "Junior high school",
-			    3, "Senior high school",
-			    4, "Bachelor's degree",
-			    5, "Master's degree",
-			    6, "Other professional",
-			    7, "Unknown"
-			)
+			
+			VAR Code = DimEducation[EDU]
+			RETURN
+			    SWITCH(
+			        TRUE(),
+			        ISBLANK(Code), "Missing",
+			        Code = 1, "Primary school",
+			        Code = 2, "Junior high school",
+			        Code = 3, "Senior high school",
+			        Code = 4, "Bachelor's degree",
+			        Code = 5, "Master's degree",
+			        "Undocumented (" & FORMAT(Code, "0") & ")"
+			    )
 		lineageTag: 49b70146-9cbf-41cf-a30b-a2fcf0a63915
 		summarizeBy: none
+		sortByColumn: EDU
 
 		changedProperty = IsHidden
+
+		changedProperty = SortByColumn
 
 		annotation SummarizationSetBy = Automatic
 
