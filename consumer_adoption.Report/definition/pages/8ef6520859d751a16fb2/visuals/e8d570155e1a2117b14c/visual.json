@@ -68,7 +68,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'''Proccessed_data_CSV''[AVAIL]'"
+                                "Value": "'''Proccessed_data_CSV''[TRUST]'"
                               }
                             }
                           ]
@@ -96,7 +96,7 @@
                                 "0": [
                                   {
                                     "Literal": {
-                                      "Value": "'''Proccessed_data_CSV''[AVAIL]'"
+                                      "Value": "'''Proccessed_data_CSV''[TRUST]'"
                                     }
                                   }
                                 ]
@@ -120,7 +120,7 @@
                         },
                         "valueMap": [
                           {
-                            "0": "Items unavailability"
+                            "0": "Trust"
                           }
                         ]
                       }

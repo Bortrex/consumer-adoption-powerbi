@@ -81,7 +81,21 @@
                           [
                             {
                               "Literal": {
+                                "Value": "'Clothing'"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
                                 "Value": "'Mobility'"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'Tooling'"
                               }
                             }
                           ]

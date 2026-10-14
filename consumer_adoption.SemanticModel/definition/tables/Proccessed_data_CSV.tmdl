@@ -22,6 +22,16 @@ table Proccessed_data_CSV
 		formatString: 0.0%;-0.0%;0.0%
 		lineageTag: fa16446e-d87e-4cfd-9008-72fc2412f3b7
 
+	measure 'High Intention Count' =
+			
+			CALCULATE(
+			    [Survey Observations],
+			    'Proccessed_data_CSV'[VD1] >= 5,
+			    'Proccessed_data_CSV'[VD1] <= 7
+			)
+		formatString: 0
+		lineageTag: 70a990fb-4424-418a-a704-42c2a2bfa000
+
 	column id
 		dataType: int64
 		isHidden
