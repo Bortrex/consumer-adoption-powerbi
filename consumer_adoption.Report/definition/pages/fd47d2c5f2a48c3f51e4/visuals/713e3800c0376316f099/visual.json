@@ -5,8 +5,8 @@
     "x": 60,
     "y": 648,
     "z": 3000,
-    "height": 408,
-    "width": 638,
+    "height": 288,
+    "width": 442,
     "tabOrder": 3000
   },
   "visual": {
@@ -23,11 +23,12 @@
                       "Entity": "Proccessed_data_CSV"
                     }
                   },
-                  "Property": "SUB"
+                  "Property": "AVAIL"
                 }
               },
-              "queryRef": "Sum(Proccessed_data_CSV.SUB)",
-              "nativeQueryRef": "SUB"
+              "queryRef": "Proccessed_data_CSV.AVAIL",
+              "nativeQueryRef": "Items unavailability",
+              "displayName": "Items unavailability"
             },
             {
               "field": {
@@ -57,82 +58,25 @@
               "queryRef": "Proccessed_data_CSV.High Intention %",
               "nativeQueryRef": "High Intention %"
             }
+          ],
+          "fieldParameters": [
+            {
+              "parameterExpr": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Perception Selector"
+                    }
+                  },
+                  "Property": "Perception Selector"
+                }
+              },
+              "index": 0,
+              "length": 1
+            }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Proccessed_data_CSV"
-                  }
-                },
-                "Property": "SUB"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
       }
-    },
-    "objects": {
-      "grid": [
-        {
-          "properties": {
-            "imageHeight": {
-              "expr": {
-                "Literal": {
-                  "Value": "81D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "values": [
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "13D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "columnHeaders": [
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "13D"
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
-    "visualContainerObjects": {
-      "visualTooltip": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ]
     },
     "drillFilterOtherVisuals": true
   }

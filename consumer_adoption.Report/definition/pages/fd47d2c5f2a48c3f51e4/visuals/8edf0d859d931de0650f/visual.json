@@ -23,13 +23,13 @@
                       "Entity": "Proccessed_data_CSV"
                     }
                   },
-                  "Property": "TRUST"
+                  "Property": "AVAIL"
                 }
               },
-              "queryRef": "Proccessed_data_CSV.TRUST",
-              "nativeQueryRef": "Trust",
+              "queryRef": "Proccessed_data_CSV.AVAIL",
+              "nativeQueryRef": "Items unavailability",
               "active": true,
-              "displayName": "Trust"
+              "displayName": "Items unavailability"
             }
           ],
           "fieldParameters": [
@@ -97,7 +97,7 @@
                     "Entity": "Proccessed_data_CSV"
                   }
                 },
-                "Property": "TRUST"
+                "Property": "AVAIL"
               }
             },
             "direction": "Ascending"
