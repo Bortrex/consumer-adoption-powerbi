@@ -1,0 +1,66 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "5d40af90244386121494",
+  "position": {
+    "x": 0,
+    "y": 346,
+    "z": 0,
+    "height": 418,
+    "width": 554,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimEducation"
+                    }
+                  },
+                  "Property": "EDU"
+                }
+              },
+              "queryRef": "DimEducation.EDU",
+              "nativeQueryRef": "EDU"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimEducation"
+                    }
+                  },
+                  "Property": "Education Level"
+                }
+              },
+              "queryRef": "DimEducation.Education Level",
+              "nativeQueryRef": "Education Level"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Proccessed_data_CSV"
+                    }
+                  },
+                  "Property": "Survey Observations"
+                }
+              },
+              "queryRef": "Proccessed_data_CSV.Survey Observations",
+              "nativeQueryRef": "Survey Observations"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

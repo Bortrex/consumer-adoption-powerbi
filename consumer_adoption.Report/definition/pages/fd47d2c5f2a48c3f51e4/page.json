@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "fd47d2c5f2a48c3f51e4",
+  "displayName": "Drivers & Barriers",
+  "displayOption": "FitToPage",
+  "height": 1080,
+  "width": 1920,
+  "pageBinding": {
+    "name": "d56f03b1478dd75fa880",
+    "type": "Default",
+    "parameters": []
+  }
+}

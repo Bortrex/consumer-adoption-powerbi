@@ -1,0 +1,119 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "21191e2c2fb48fff9b5a",
+  "position": {
+    "x": 35,
+    "y": 147.5,
+    "z": 0,
+    "height": 230,
+    "width": 820,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Proccessed_data_CSV"
+                    }
+                  },
+                  "Property": "Survey Observations"
+                }
+              },
+              "queryRef": "Proccessed_data_CSV.Survey Observations",
+              "nativeQueryRef": "Survey Observations"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Proccessed_data_CSV"
+                    }
+                  },
+                  "Property": "Average Subscription Intention"
+                }
+              },
+              "queryRef": "Proccessed_data_CSV.Average Subscription Intention",
+              "nativeQueryRef": "Average Subscription Intention"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Proccessed_data_CSV"
+                    }
+                  },
+                  "Property": "High Intention %"
+                }
+              },
+              "queryRef": "Proccessed_data_CSV.High Intention %",
+              "nativeQueryRef": "High Intention %"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Proccessed_data_CSV"
+                  }
+                },
+                "Property": "Survey Observations"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Consumer Adoption — Overview'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "keepLayerOrder": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
