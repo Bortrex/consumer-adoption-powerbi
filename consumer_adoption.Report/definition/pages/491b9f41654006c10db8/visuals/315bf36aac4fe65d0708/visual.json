@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "315bf36aac4fe65d0708",
   "position": {
-    "x": 322,
-    "y": 210,
+    "x": 416,
+    "y": 125,
     "z": 3000,
-    "height": 54,
-    "width": 574,
+    "height": 96,
+    "width": 1472,
     "tabOrder": 3000
   },
   "visual": {
@@ -19,19 +19,124 @@
               {
                 "textRuns": [
                   {
-                    "value": "Education codes 6 and 7 remain undocumented.",
+                    "value": "Education codes 6 and 7 are undocumented in the source codebook.",
                     "textStyle": {
-                      "fontSize": "18pt"
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "16pt",
+                      "color": "#172b4d"
                     }
                   }
-                ],
-                "listType": "bullet"
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Both categories are retained as reported.",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "16pt",
+                      "color": "#172b4d"
+                    }
+                  }
+                ]
               }
             ]
           }
         }
       ]
     },
-    "drillFilterOtherVisuals": true
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "16D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "16D"
+                }
+              }
+            },
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "16D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "16D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
   }
 }
