@@ -38,4 +38,4 @@ Existing model view screenshot:
 
 ## Calculated fields and model settings
 
-Fact DAX columns are `Intention Band` and `Intention Band Sort`. `DimEducation[Education Level]` is a DAX label column. The calculated parameter table maps Financial advantage → FIN (0), Trust → TRUST (1), Subscription dislike → SUB (2), Items unavailability → AVAIL (3). It contains display.
+Fact DAX columns are `Intention Band` and `Intention Band Sort`. `DimEducation[Education Level]` is a DAX label column. The calculated parameter table maps Financial advantage → FIN (0), Trust → TRUST (1), Subscription dislike → SUB (2), Items unavailability → AVAIL (3). 

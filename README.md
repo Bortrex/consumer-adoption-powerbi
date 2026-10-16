@@ -79,6 +79,8 @@ Dethier, Fanny; De Hoe, Roxane; Muylaert, Coralie; Roman, Philippe; Ruwet, Colin
 
 [![CC BY 4.0][cc-by-shield]][cc-by]
 
+The source dataset is distributed under [CC BY 4.0](https://interoperable-europe.ec.europa.eu/licence/creative-commons-attribution-40-international-cc-40). This attribution applies to the original Mendeley dataset. The license of this repository Power BI project files is separate.
+
 [cc-by]: http://creativecommons.org/licenses/by/4.0/
 [cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
 
