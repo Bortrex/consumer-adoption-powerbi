@@ -9,5 +9,73 @@
     "name": "d56f03b1478dd75fa880",
     "type": "Default",
     "parameters": []
-  }
+  },
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#F3F5F8'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "9cfee6028bb4a751abe8",
+      "target": "b86519c702af4c309e16",
+      "type": "NoFilter"
+    },
+    {
+      "source": "8edf0d859d931de0650f",
+      "target": "b86519c702af4c309e16",
+      "type": "NoFilter"
+    },
+    {
+      "source": "713e3800c0376316f099",
+      "target": "b86519c702af4c309e16",
+      "type": "NoFilter"
+    },
+    {
+      "source": "eb07778ed1bce4a527c9",
+      "target": "b86519c702af4c309e16",
+      "type": "DataFilter"
+    },
+    {
+      "source": "b86519c702af4c309e16",
+      "target": "8edf0d859d931de0650f",
+      "type": "DataFilter"
+    },
+    {
+      "source": "b86519c702af4c309e16",
+      "target": "713e3800c0376316f099",
+      "type": "DataFilter"
+    },
+    {
+      "source": "b86519c702af4c309e16",
+      "target": "9cfee6028bb4a751abe8",
+      "type": "NoFilter"
+    },
+    {
+      "source": "b86519c702af4c309e16",
+      "target": "eb07778ed1bce4a527c9",
+      "type": "NoFilter"
+    }
+  ]
 }

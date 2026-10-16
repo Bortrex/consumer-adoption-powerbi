@@ -50,6 +50,27 @@
           "type": "BaseTheme"
         }
       ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "lucide-bike-2026101401.svg",
+          "path": "lucide-bike-2026101401.svg",
+          "type": "Image"
+        },
+        {
+          "name": "lucide-shirt-2026101401.svg",
+          "path": "lucide-shirt-2026101401.svg",
+          "type": "Image"
+        },
+        {
+          "name": "lucide-wrench-2026101401.svg",
+          "path": "lucide-wrench-2026101401.svg",
+          "type": "Image"
+        }
+      ]
     }
   ],
   "settings": {
