@@ -46,6 +46,69 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "proccessed_data_csv.survey_observations": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Proccessed_data_CSV",
+			          "ConceptualProperty": "Survey Observations"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Observations": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "proccessed_data_csv.high_intention_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Proccessed_data_CSV",
+			          "ConceptualProperty": "High Intention %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "High %": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "proccessed_data_csv.high_intention_count": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Proccessed_data_CSV",
+			          "ConceptualProperty": "High Intention Count"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "High Count": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  }
 			}

@@ -839,7 +839,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'All sectors — unaffected by AREA and treemap selections · Codes are categories, not equal educational intervals; 6 and 7 are undocumented.'"
+                  "Value": "'All sectors — unaffected by AREA and treemap selections.'"
                 }
               }
             },

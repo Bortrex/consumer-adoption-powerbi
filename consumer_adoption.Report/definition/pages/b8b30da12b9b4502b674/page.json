@@ -1,10 +1,10 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
   "name": "b8b30da12b9b4502b674",
-  "displayName": "New_Audience Segments",
+  "displayName": "Audience Segments",
   "displayOption": "FitToPage",
-  "width": 1920,
   "height": 1080,
+  "width": 1920,
   "objects": {
     "background": [
       {
