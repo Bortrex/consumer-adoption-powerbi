@@ -10,21 +10,21 @@
       "nodes": [
         {
           "location": {
-            "x": 244,
-            "y": 279
+            "x": 426,
+            "y": 93
           },
           "nodeIndex": "Proccessed_data_CSV",
           "nodeLineageTag": "0b900f5b-1639-4601-9549-6b79f42e3df7",
           "size": {
-            "height": 451,
+            "height": 385,
             "width": 234
           },
           "zIndex": 2
         },
         {
           "location": {
-            "x": 166.39999723434448,
-            "y": 116
+            "x": 423.39999723434448,
+            "y": 503
           },
           "nodeIndex": "Perception Selector",
           "nodeLineageTag": "90ba349e-800e-4507-a32b-a64f330746d0",
@@ -36,7 +36,7 @@
         },
         {
           "location": {
-            "x": 0,
+            "x": 117,
             "y": 0
           },
           "nodeIndex": "DimSector",
@@ -49,8 +49,8 @@
         },
         {
           "location": {
-            "x": 0,
-            "y": 581.5
+            "x": 747,
+            "y": 0
           },
           "nodeIndex": "DimEducation",
           "nodeLineageTag": "d3094c4a-5843-4945-97ec-78734bfbed89",
